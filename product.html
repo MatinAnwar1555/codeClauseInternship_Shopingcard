@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopNothing | Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/e-comm.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">ShopNothing</h1>
+      <nav>
+        <ul class="flex gap-6 text-gray-600">
+          <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+          <li><a href="products.html" class="hover:text-blue-600 font-semibold">Products</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+          <li><a href="/cart.html" class="hover:text-blue-600">cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Product Section -->
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-semibold text-center mb-8">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+
+
+      <!-- Product Card -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/CbvaBdIbasmxp0PcWGoLXTOYGB3J0iWQnN7KnDBx1Rs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ibHVldG9vdGgt/d2lyZWxlc3MtaGVh/ZHBob25lcy1tb2Rl/cm4tZGV2aWNlcy1s/aXN0ZW5pbmctbXVz/aWMtc3R1ZGlvLXNo/b3QtY29weS1zcGFj/ZV8zMDA5MDMtMTMy/Ni5qcGc_c2VtdD1h/aXNfaHlicmlkJnc9/NzQw" alt="Product 1" class="w-full h-48 object-cover rounded-t-xl" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Wireless Headphones</h4>
+          <p class="text-gray-600 mt-1">$599</p>
+          <button onclick="addToCart('Wireless Headphones', 599)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+         
+          
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/Yxn8GWX1S1dWwfeQ5S88nYR2qIpYBNcCI3G_IsF2XSM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMy8x/MC8wNy8xNC8yNC9z/bWFydHdhdGNoLTgz/MDAyMzhfNjQwLmpw/Zw" alt="Product 2" class="w-full h-48 object-cover rounded-t-xl" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Smart Watch</h4>
+          <p class="text-gray-600 mt-1">$799</p>
+          <button onclick="addToCart('Smart Watch', 799)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/McPJyF-DGthQtpTPVSHSL9pSv0IaETxR0dK_U8m8bPo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTkx/ODc3L3BleGVscy1w/aG90by0xOTE4Nzcu/anBlZz9hdXRvPWNv/bXByZXNzJmNzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw" alt="Product 3" class="w-full h-48 object-cover rounded-t-xl" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Bluetooth Speaker</h4>
+          <p class="text-gray-600 mt-1">$299</p>
+          <button onclick="addToCart('Bluetooth Speaker', 299)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/ZFvGvulZv6dQQSVNy1tlG2W-LAUiWaX2D1xTA2H5XYA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTM4/MDA0NDM2L3Bob3Rv/L3VzYi10eXBlLWMt/aHViLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz12cDBSSEhJ/d2F1LUJVLVgyZDJz/V3h0Q1l6RmhDeVFq/T1pUNy1KczVuNVZv/PQ" alt="Product 4" class="w-full h-48 object-cover rounded-t-xl" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">USB-C Hub</h4>
+          <p class="text-gray-600 mt-1">$199</p>
+          <button onclick="addToCart('USB-C Hub', 199)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/lkaJ3TMBTVSmPtqS1MG44ok1X3lGZA7V4vtYtsy_Lv0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA0LzE1LzAwLzgx/LzM2MF9GXzQxNTAw/ODE5N19oNEU3WEZr/UWtVU0VIaW85RG56/WnV2bkR1V2UyOUd0/aC5qcGc" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Charger</h4>
+          <p class="text-gray-600 mt-1">$699</p>
+          <button onclick="addToCart('Charger', 699)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/l2LKj_GFuUvbhCJvr1mSe7D3sVVws5IHg6XJAArUAMU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wb3dlcmJhbmst/Y2hhcmdlcy1zbWFy/dHBob25lLWlzb2xh/dGVkLWJsYWNrLWJh/Y2tncm91bmRfOTMy/MDAtMzUxMi5qcGc_/c2VtdD1haXNfaXRl/bXNfYm9vc3RlZCZ3/PTc0MA" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Power Bank</h4>
+          <p class="text-gray-600 mt-1">$899</p>
+          <button onclick="addToCart('Power Bank', 899)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/eemnt-2RPS-fKc_vgoDjwmLk-bYvrVJ4wH0WEzJd8kQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9t/b2JpbGUtcGhvbmUt/c2NyZWVuLWRpZ2l0/YWwtZGV2aWNlXzUz/ODc2LTk3Mjk0Lmpw/Zz9zZW10PWFpc19o/eWJyaWQmdz03NDA" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Mobile</h4>
+          <p class="text-gray-600 mt-1">$1999</p>
+          <button onclick="addToCart('Mobile', 1999)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/XneAWt7z6NFaYF5JNNVsog9exobqQ3Pe9Z_fpSNuLvo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZHB6b25lLmluL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8xL0VhcnBo/b25lLURQLWZvci1C/b3lzLTEud2VicA" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Earphone</h4>
+          <p class="text-gray-600 mt-1">$99</p>
+          <button onclick="addToCart('Earphone', 99)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/yS1axT3sSe1grvaLJuxb0vfBnwAMrNA6EoFXdVPl3lQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhld2lyZWN1dHRl/ci5jb20vd3AtY29u/dGVudC9tZWRpYS8y/MDI0LzEwL0JFU1Qt/NDAtVE8tNDktSU5D/SC1UVi0yMDQ4cHgt/c2Ftc3VuZ3FuOTBE/aGVyby0zeDItMS5q/cGc" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Lcd Tv</h4>
+          <p class="text-gray-600 mt-1">$1199</p>
+          <button onclick="addToCart('Lcd Tv', 1199)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/gD-GfIN252dpIzuoj1x6byjMOuck_C11aE9beIFyUdQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNC8x/MS8yMi8wMC81MS9j/YW1lcmEtNTQxMjEz/XzY0MC5qcGc" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Camera</h4>
+          <p class="text-gray-600 mt-1">$999</p>
+          <button onclick="addToCart('Camera', 999)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/s1PL0D9o5P4Q2Ug-GaJUkY7I--zRE1P0ojNSgIq7xK4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTI5/MjA4L3BleGVscy1w/aG90by0xMjkyMDgu/anBlZz9hdXRvPWNv/bXByZXNzJmNzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Laptop</h4>
+          <p class="text-gray-600 mt-1">$3999</p>
+          <button onclick="addToCart('Laptop', 3999)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://imgs.search.brave.com/b_J0l5jy_C9HTsOI7Dpi8FJAeG1sgicwbgYZfSxXFZs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE0/NDA1MzYwL3Bob3Rv/L2Rlc2t0b3AtY29t/cHV0ZXIuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTlzSEtq/NzFaenNTTWFPVXI1/MkJUdUh3d0NDSUFS/QVNjejRYb0Z0Wl9k/aG89" />
+        <div class="p-4">
+          <h4 class="text-lg font-semibold text-gray-800">Computer</h4>
+          <p class="text-gray-600 mt-1">$2999</p>
+          <button onclick="addToCart('Computer', 2999)" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; ShopNothing is not trusted online store for the latest tech gadgets and accessories. We do not deliver quality, affordability, and fast service.. All rights reserved to MATIN ANWAR.</p>
+  </footer>
+</body>
+</html>
